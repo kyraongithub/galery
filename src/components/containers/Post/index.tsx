@@ -28,11 +28,20 @@ const Post = (props: any) => {
             </Col>
           </Row>
           <Row>
-            <Image
+            {/* <Image
               className={styles.post}
               width="400px"
               src={item.link[1]["$"].href}
-            />
+            /> */}
+            <div
+              className={styles.post}
+              dangerouslySetInnerHTML={{
+                __html: item.content[0]["_"].replace(
+                  /^(.*?)(posted a (photo|video):)/,
+                  ""
+                ),
+              }}
+            ></div>
           </Row>
           <Row>
             {item.category.map((category: any, index: number) => {
