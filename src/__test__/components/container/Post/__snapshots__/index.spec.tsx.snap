@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post component render Post 1`] = `<div />`;
+
+exports[`Post component render Post with data 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <div
+      class="header row"
+      role="button"
+    >
+      <div
+        class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"
+      >
+        <img
+          class="rounded-circle img-thumbnail"
+          src="https://farm66.staticflickr.com/65535/buddyicons/190550837@N04.jpg?1665867420#190550837@N04"
+        />
+      </div>
+      <div
+        class="col"
+      >
+        <p>
+          <b>
+            .ilona.
+          </b>
+        </p>
+        <p>
+          an hour ago
+        </p>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="post"
+      >
+        <p />
+        
+	
+
+        <p>
+          <a
+            href="https://www.flickr.com/photos/190550837@N04/52782611707/"
+            title="Two houses behind the fence"
+          >
+            <img
+              alt="Two houses behind the fence"
+              height="135"
+              src="https://live.staticflickr.com/65535/52782611707_d429f8b443_m.jpg"
+              width="240"
+            />
+          </a>
+        </p>
+        
+
+
+
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <p>
+        #
+        tag
+         
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Post component should handle click profile 1`] = `
+<div>
+  <div
+    class="content"
+  >
+    <div
+      class="header row"
+      role="button"
+    >
+      <div
+        class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3"
+      >
+        <img
+          class="rounded-circle img-thumbnail"
+          src="https://farm66.staticflickr.com/65535/buddyicons/190550837@N04.jpg?1665867420#190550837@N04"
+        />
+      </div>
+      <div
+        class="col"
+      >
+        <p>
+          <b>
+            .ilona.
+          </b>
+        </p>
+        <p>
+          an hour ago
+        </p>
+      </div>
+    </div>
+    <div
+      class="row"
+    >
+      <div
+        class="post"
+      >
+        <p />
+        
+	
+
+        <p>
+          <a
+            href="https://www.flickr.com/photos/190550837@N04/52782611707/"
+            title="Two houses behind the fence"
+          >
+            <img
+              alt="Two houses behind the fence"
+              height="135"
+              src="https://live.staticflickr.com/65535/52782611707_d429f8b443_m.jpg"
+              width="240"
+            />
+          </a>
+        </p>
+        
+
+
+
+      </div>
+    </div>
+    <div
+      class="row"
+    />
+  </div>
+</div>
+`;

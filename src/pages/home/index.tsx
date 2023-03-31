@@ -1,11 +1,11 @@
-import Post from "components/containers/Post";
-import Loader from "components/elements/Loader";
-import { store } from "context/redux";
-import { handleKeyword } from "context/redux/action";
+import Post from "@/components/containers/Post";
+import Loader from "@/components/elements/Loader";
+import { store } from "@/context/redux";
+import { handleKeyword } from "@/context/redux/action";
 import { useEffect, useState } from "react";
 import { Container, Form, Button, InputGroup, Navbar } from "react-bootstrap";
 import { connect } from "react-redux";
-import { getGalery, getGaleryByTag } from "services/Galery/http";
+import { getGalery, getGaleryByTag } from "@/services/Galery/http";
 import styles from "./Home.module.scss";
 
 const Home = () => {
@@ -19,9 +19,7 @@ const Home = () => {
     }
   }, [keyword]);
 
-  return isLoading ? (
-    <Loader />
-  ) : (
+  return (
     <Container>
       <Navbar>
         <Container>
@@ -34,6 +32,7 @@ const Home = () => {
                 aria-describedby="basic-addon2"
                 onChange={(e: any) => settag(e.target.value)}
                 value={tag}
+                role={"form"}
               />
               <Button
                 variant="outline-secondary"
@@ -47,9 +46,13 @@ const Home = () => {
         </Container>
       </Navbar>
 
-      {galery.map((item: any, index: number) => {
-        return <Post item={item} key={index} />;
-      })}
+      {isLoading ? (
+        <Loader />
+      ) : (
+        galery.map((item: any, index: number) => {
+          return <Post item={item} key={index} />;
+        })
+      )}
     </Container>
   );
 };

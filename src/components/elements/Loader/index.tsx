@@ -1,6 +1,6 @@
 import cn from "classnames";
 import styles from "./Loader.module.scss";
-import { Props } from "./type.types";
+import { Props } from "./type.type";
 
 const Loader = (props: Props) => {
   const { big, white } = props;
