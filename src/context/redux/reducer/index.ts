@@ -1,6 +1,7 @@
 const initialState = {
   galery: [],
   isLoading: true,
+  keyword: "",
 };
 
 type Action = {
@@ -19,6 +20,11 @@ const reducer = (state = initialState, action: Action) => {
       return {
         ...state,
         isLoading: action.value,
+      };
+    case "SET_KEYWORD":
+      return {
+        ...state,
+        keyword: action.value,
       };
   }
   return state;

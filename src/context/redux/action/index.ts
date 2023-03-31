@@ -13,3 +13,13 @@ export const handleLoading = (value: boolean) => {
     value,
   });
 };
+export const handleKeyword = (value: string) => {
+  store.dispatch({
+    type: "SET_LOADING",
+    value: true,
+  });
+  store.dispatch({
+    type: "SET_KEYWORD",
+    value,
+  });
+};
