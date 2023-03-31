@@ -46,11 +46,13 @@ const Post = (props: any) => {
             ></div>
           </Row>
           <Row>
-            {item?.category.map((category: any, index: number) => {
-              return category["$"].term !== "" ? (
-                <p key={index}>#{category["$"].term} </p>
-              ) : null;
-            })}
+            <p>
+              {item?.category.map((category: any, index: number) => {
+                return category["$"].term !== "" ? (
+                  <span key={index}>#{category["$"].term} </span>
+                ) : null;
+              })}
+            </p>
           </Row>
         </div>
       ) : null}
